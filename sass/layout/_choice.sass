@@ -1,0 +1,48 @@
+.section-choice
+    padding: 15.6rem 0 6.4rem 0
+    background-color: $color-beige-light
+    @include respond(tablet-medium)
+        padding-top: 6rem
+
+.choice-title
+    position: relative
+    &__line
+        position: absolute
+        bottom: 0
+        right: 26rem
+        width: 38rem
+        @include respond(tablet-large)
+            right: 50%
+            transform: translateX(50%)
+
+.cards
+    display: flex
+    justify-content: center
+    gap: 2.4rem
+    flex-wrap: wrap
+    text-align: center
+    margin-top: 5.6rem
+    &__content
+        border: 1px solid $color-white
+        border-radius: 3.2rem
+        background-color: $color-white
+        width: 42.4rem
+        // height: 42.4rem
+        padding: 5.3rem 5.6rem
+        &:hover
+            background-color: $color-yellow
+        &:hover p
+            color: $color-white
+        &:hover h4
+            color: $color-white
+        &:hover .cards__img_item
+            display: none
+    &__img
+        position: relative
+        &_item
+            width: 10rem
+            height: 10rem
+            position: absolute
+        &_item-hover
+            width: 10rem
+            height: 10rem

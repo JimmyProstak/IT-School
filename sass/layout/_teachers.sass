@@ -1,0 +1,36 @@
+.section-teachers
+    background-color: $color-beige-light
+    padding: 6.4rem 0
+.teachers-title
+    text-align: center
+    position: relative
+    margin-bottom: 5.6rem
+    &__line
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translate(-50%)
+        @include respond(laptop-medium)
+            width: 34rem
+
+.teachers-cards
+    display: flex
+    justify-content: center
+    gap: 2.4rem
+    flex-wrap: wrap
+    &__item
+        border: 1px solid $color-yellow
+        border-radius: 3.2rem
+        background: #FFF
+        width: 42rem
+        height: 65rem
+        padding: 3.2rem 3.5rem 0 3.5rem
+        text-align: center
+        &_img
+            width: 23rem
+            height: 23rem
+            margin-bottom: 3.2rem
+        &_title
+            margin-bottom: 1.6rem
+        &_text
+            margin-bottom: 3.2rem

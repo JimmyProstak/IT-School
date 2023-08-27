@@ -1,0 +1,29 @@
+*, ::after, ::before
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html
+  font-size: 62.5%
+  scroll-behavior: smooth
+  @include respond(laptop-large)
+    font-size: 56.25%
+    @include respond(tablet-large)
+      font-size: 50%
+    @include respond(tablet-medium)
+      font-size: 47%
+    @include respond(tablet-small)
+      font-size: 42%
+    @include respond(phone)
+      font-size: 35%
+
+body
+  font-family: 'Montserrat', sans-serif
+  font-family: 'Roboto Mono', monospace
+
+.container
+  max-width: 132rem
+  margin: 0 auto
+  position: relative
+  @include respond(laptop-large)
+    width: 90%

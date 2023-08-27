@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <title>IT School</title>
+  </head>
+  <body>
+    <header class="header" id="header-id">
+      <span class="ellipse ellipse__right"></span>
+      <span class="ellipse ellipse__left"></span>
+      <div class="container">
+        <div class="header__grid">
+          <div class="header__logo">
+            <a href="index.html" class="header__logo_link">
+              <img src="img/logo.png" alt="logo" class="header__logo_img" />
+            </a>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__menu_list">
+              <li class="header__menu_item">
+                <a href="#header-id" class="header__menu_link">Главная</a>
+              </li>
+              <li class="header__menu_item">
+                <a href="#about-us" class="header__menu_link">О нас</a>
+              </li>
+              <li class="header__menu_item">
+                <a href="#course-id" class="header__menu_link">Программа</a>
+              </li>
+              <li class="header__menu_item">
+                <a href="#teachers-id" class="header__menu_link">Учителя</a>
+              </li>
+              <li class="header__menu_item">
+                <a href="#feedback-id" class="header__menu_link">Отзывы</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__tel">
+            <a href="tel:+380631457898" class="header__tel_border">
+              <img class="header__tel_icon" src="icons/phone.svg" alt="phone" />
+              <span class="header__tel_text">+38 063 145 78 98</span>
+            </a>
+          </div>
+          <div class="header__lang">
+            <select class="header__lang_select">
+              <option value="Рус">Рус</option>
+              <option value="Укр">Укр</option>
+            </select>
+          </div>
+
+          <div class="header__content">
+            <h1 class="title-1">
+              <span class="title-1__span-1">Курс</span>
+              <span class="title-1__span-2"
+                ><span><</span>Frontend developer></span
+              >
+            </h1>
+            <p class="text">
+              Независимо от вашего уровня подготовки - от начинающего до
+              опытного программиста - мы предлагаем индивидуальные занятия,
+              которые адаптированы под ваши потребности и уровень сложности.
+            </p>
+            <p class="text">Первый урок бесплатно!</p>
+            <div class="btn">
+              <button class="btn-header">Записаться на занятие</button>
+            </div>
+          </div>
+          <div class="header__img">
+            <img class="header__img_item" src="img/header-img.png" alt="img" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Hamburger -->
+      <div class="hamburger-box">
+        <div class="hamburger-logo">
+          <a class="hamburger-logo__link" href="index.html"
+            ><img
+              class="hamburger-logo__img"
+              src="img/logo.png"
+              alt="Hardcode™"
+          /></a>
+        </div>
+        <div class="hamburger-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="hamburger">
+        <nav class="hamburger__menu">
+          <ul class="hamburger__menu_list">
+            <li class="hamburger__menu_item">
+              <a href="#header-id" class="hamburger__menu_link">Главная</a>
+            </li>
+            <li class="hamburger__menu_item">
+              <a href="#about-us" class="hamburger__menu_link">О нас</a>
+            </li>
+            <li class="hamburger__menu_item">
+              <a href="#course-id" class="hamburger__menu_link">Программа</a>
+            </li>
+            <li class="hamburger__menu_item">
+              <a href="#teachers-id" class="hamburger__menu_link">Учителя</a>
+            </li>
+            <li class="hamburger__menu_item">
+              <a href="#feedback-id" class="hamburger__menu_link">Отзывы</a>
+            </li>
+            <a href="tel:+380631457898" class="hamburger__tel_border">
+              <img
+                class="hamburger__tel_icon"
+                src="icons/phone.svg"
+                alt="phone"
+              />
+              <span class="hamburger__tel_text">+38 063 145 78 98</span>
+            </a>
+            <select class="hamburger__lang">
+              <option value="Рус">Рус</option>
+              <option value="Укр">Укр</option>
+            </select>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Modal window -->
+      <div class="modal">
+        <div class="modal__wraper">
+          <button class="modal__btn-close">
+            <span></span>
+            <span></span>
+          </button>
+          <h3 class="modal__title margin-bottom-40px">Оставить заявку</h3>
+          <form action="#" class="modal-form form-validation">
+            <div class="modal-form__input">
+              <label class="modal-form__input_label" for="name">Имя*</label>
+              <input
+                class="modal-form__input_item input-name"
+                type="text"
+                name="name"
+                placeholder="Введите своё имя"
+                required
+              />
+            </div>
+            <div class="modal-form__input">
+              <label class="modal-form__input_label" for="tel"
+                >Номер телефона*</label
+              >
+              <input
+                class="modal-form__input_item input-tel"
+                type="tel"
+                name="tel"
+                placeholder="Введите Ваш номер телефона"
+                required
+              />
+            </div>
+            <div class="modal-form__input">
+              <label class="modal-form__input_label" for="email">Email*</label>
+              <input
+                class="modal-form__input_item input-email"
+                type="email"
+                name="email"
+                placeholder="Введите Ваш Email"
+                required
+              />
+            </div>
+            <div class="modal-form__input">
+              <input
+                class="modal-form__input_btn"
+                type="submit"
+                value="Отправить"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <!-- Ticker -->
+    <section class="ticker">
+      <div class="ticker__1">
+        &#128293; html &#129321; JavaScript &#128293; vue &#129321; scss
+        &#128293; bootstrap &#129321; php &#128293; wordpress &#129321; css
+        &#128293; html &#129321; JavaScript &#128293; vue &#129321; scss
+        &#128293; bootstrap &#129321; php &#128293; wordpress &#129321; css
+        &#128293; html &#129321; JavaScript &#128293; vue &#129321; scss
+        &#128293; bootstrap &#129321; php &#128293; wordpress &#129321; css
+        &#128293; html &#129321; JavaScript &#128293; vue &#129321; scss
+        &#128293; bootstrap &#129321; php &#128293; wordpress &#129321; css
+      </div>
+      <div class="ticker__2">
+        &#11014; top &#11014; top &#11014; top &#11014; top &#11014; top
+        &#11014; top &#11014; top &#11014; top &#11014; top &#11014; top
+        &#11014; top &#11014; top &#11014; top &#11014; top &#11014; top
+        &#11014; top &#11014; top &#11014; top &#11014; top &#11014; top
+        &#11014; top &#11014; top &#11014; top &#11014; top &#11014; top
+        &#11014; top &#11014; top &#11014; top &#11014; top &#11014; top
+        &#11014; top &#11014; top &#11014; top &#11014; top &#11014; top
+        &#11014; top &#11014; top &#11014; top &#11014; top &#11014; top
+        &#11014; top &#11014; top &#11014; top &#11014; top &#11014; top
+        &#11014; top &#11014; top &#11014; top &#11014; top &#11014; top
+        &#11014; top &#11014; top &#11014; top &#11014; top &#11014; top
+      </div>
+    </section>
+
+    <!-- Choice us -->
+    <section class="section-choice" id="about-us">
+      <div class="container">
+        <div class="choice-title text-align-center">
+          <h2 class="title-2">Почему нас выбирают?</h2>
+          <img class="choice-title__line" src="icons/line.svg" alt="vector" />
+        </div>
+        <div class="cards">
+          <div class="cards__content">
+            <div class="cards__img">
+              <img
+                class="cards__img_item"
+                src="icons/calendar.svg"
+                alt="calendar"
+              />
+              <img
+                class="cards__img_item-hover"
+                src="icons/calendar-hover.svg"
+                alt="calendar"
+              />
+            </div>
+            <h4 class="title-4 margin-top-16px">Профессиональный опыт</h4>
+            <p class="text margin-top-24px">
+              Мы имеем богатый опыт в области программирования и владеем
+              различными языками программирования, фреймворками и технологиями.
+            </p>
+          </div>
+          <div class="cards__content">
+            <div class="cards__img">
+              <img class="cards__img_item" src="icons/human.svg" alt="human" />
+              <img
+                class="cards__img_item-hover"
+                src="icons/human-hover.svg"
+                alt="human"
+              />
+            </div>
+            <h4 class="title-4 margin-top-16px">Индивидуальный подход</h4>
+            <p class="text margin-top-24px">
+              Мы понимаем, что каждый ученик уникален, и наш репетитор создаст
+              индивидуальную программу обучения, соответствующую вашим целям,
+              уровню знаний и темпу обучения.
+            </p>
+          </div>
+          <div class="cards__content">
+            <div class="cards__img">
+              <img class="cards__img_item" src="icons/lamp.svg" alt="lamp" />
+              <img
+                class="cards__img_item-hover"
+                src="icons/lamp-hover.svg"
+                alt="lamp"
+              />
+            </div>
+            <h4 class="title-4 margin-top-16px">Гибкий график</h4>
+            <p class="text margin-top-24px">
+              Вы можете выбрать удобное время и место для занятий - будь то
+              очные занятия в офисе, онлайн-уроки или занятия на дому. Мы готовы
+              адаптироваться к вашим требованиям.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Course -->
+    <section class="section-course" id="course-id">
+      <div class="container">
+        <div class="course">
+          <div class="course__img">
+            <img class="course__img_item" src="img/course-img.png" alt="img" />
+            <img class="course__img_dotted" src="img/dotted.png" alt="dotted" />
+          </div>
+          <div class="course__content">
+            <div
+              class="course__content_title margin-top-30px margin-bottom-50px"
+            >
+              <h3 class="title-3">Кому подойдет курс ?</h3>
+              <img
+                class="course__content_title-vector"
+                src="icons/vector.svg"
+                alt="vector"
+              />
+            </div>
+            <div class="course__descr">
+              <div class="course__descr_title">
+                <img src="icons/chceckbox.png" alt="" />
+                <h4 class="title-4">Новичкам</h4>
+              </div>
+              <div class="text">
+                Если вы никогда не программировали раньше, наш курс идеально
+                подойдет для вас. Мы создали программу обучения, которая
+                начинается с основных концепций и постепенно ведет вас к более
+                сложным темам. Мы поможем вам разобраться с основами и построить
+                прочную базу знаний.
+              </div>
+            </div>
+            <div class="course__descr">
+              <div class="course__descr_title">
+                <img src="icons/chceckbox.png" alt="" />
+                <h4 class="title-4">фрилансерам</h4>
+              </div>
+              <div class="text">
+                Профессионалам, желающим расширить навыки: Если вы уже работаете
+                в сфере программирования, но хотите улучшить свои навыки или
+                освежить знания в конкретных областях, наш курс предложит вам
+                продвинутые темы и практические упражнения. Вы сможете узнать
+                новые подходы и методы, которые помогут вам стать более
+                компетентным разработчиком.
+              </div>
+            </div>
+            <div class="course__descr">
+              <div class="course__descr_title">
+                <img src="icons/chceckbox.png" alt="" />
+                <h4 class="title-4">Детям</h4>
+              </div>
+              <div class="text">
+                В мире, где технологии становятся все более присутствующими,
+                знание программирования является ценным навыком. Наш курс
+                поможет детям овладеть основами программирования и даст им
+                преимущество при выборе будущей профессии в сфере технологий.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="ellipse ellipse__course"></span>
+      <div class="container">
+        <div class="course__program">
+          <h3 class="title-3 margin-bottom-50px">Программа курса</h3>
+          <div class="accordion">
+            <div class="accordion__title">
+              <img src="icons/Arrow.svg" alt="arrow" class="accordion__arrow" />
+              <h4 class="title-4">1. Введение в веб-разработку</h4>
+            </div>
+            <div class="accordion__content">
+              <ul class="accordion__content_list">
+                <li class="accordion__content_item text">Основы HTML и CSS</li>
+                <li class="accordion__content_item text">
+                  Работа с текстом, изображениями и мультимедиа
+                </li>
+                <li class="accordion__content_item text">
+                  Семантическая разметка и доступность
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__title">
+              <img src="icons/Arrow.svg" alt="arrow" class="accordion__arrow" />
+              <h4 class="title-4">2. Основы JavaScript</h4>
+            </div>
+            <div class="accordion__content">
+              <ul class="accordion__content_list">
+                <li class="accordion__content_item text">
+                  Синтаксис и типы данных
+                </li>
+                <li class="accordion__content_item text">
+                  Условные операторы и циклы
+                </li>
+                <li class="accordion__content_item text">
+                  Функции и область видимости
+                </li>
+                <li class="accordion__content_item text">
+                  Работа с массивами и объектами
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__title">
+              <img src="icons/Arrow.svg" alt="arrow" class="accordion__arrow" />
+              <h4 class="title-4">3. Расширенный JavaScript</h4>
+            </div>
+            <div class="accordion__content">
+              <ul class="accordion__content_list">
+                <li class="accordion__content_item text">
+                  Объектно-ориентированное программирование (ООП)
+                </li>
+                <li class="accordion__content_item text">
+                  Работа с DOM (Document Object Model)
+                </li>
+                <li class="accordion__content_item text">
+                  Асинхронное программирование и обработка событий
+                </li>
+                <li class="accordion__content_item text">
+                  Работа с API и AJAX
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__title">
+              <img src="icons/Arrow.svg" alt="arrow" class="accordion__arrow" />
+              <h4 class="title-4">4. Фреймворки и библиотеки</h4>
+            </div>
+            <div class="accordion__content">
+              <ul class="accordion__content_list">
+                <li class="accordion__content_item text">
+                  Введение в фреймворки (например, React, Angular, Vue.js)
+                </li>
+                <li class="accordion__content_item text">
+                  Разработка компонентов и роутинг
+                </li>
+                <li class="accordion__content_item text">
+                  Управление состоянием (state management)
+                </li>
+                <li class="accordion__content_item text">
+                  Взаимодействие с сервером и REST API
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__title">
+              <img src="icons/Arrow.svg" alt="arrow" class="accordion__arrow" />
+              <h4 class="title-4">5. Адаптивная и отзывчивая веб-разработка</h4>
+            </div>
+            <div class="accordion__content">
+              <ul class="accordion__content_list">
+                <li class="accordion__content_item text">CSS Grid и Flexbox</li>
+                <li class="accordion__content_item text">
+                  Медиазапросы и адаптивный дизайн
+                </li>
+                <li class="accordion__content_item text">
+                  Создание мобильных и планшетных версий сайта
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__title">
+              <img src="icons/Arrow.svg" alt="arrow" class="accordion__arrow" />
+              <h4 class="title-4">6. Оптимизация и тестирование</h4>
+            </div>
+            <div class="accordion__content">
+              <ul class="accordion__content_list">
+                <li class="accordion__content_item text">
+                  Оптимизация производительности и загрузки сайта
+                </li>
+                <li class="accordion__content_item text">
+                  Отладка и инструменты разработчика
+                </li>
+                <li class="accordion__content_item text">
+                  Тестирование и отладка кода
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__title">
+              <img src="icons/Arrow.svg" alt="arrow" class="accordion__arrow" />
+              <h4 class="title-4">7. Сборка и развертывание</h4>
+            </div>
+            <div class="accordion__content">
+              <ul class="accordion__content_list">
+                <li class="accordion__content_item text">
+                  Использование инструментов сборки (например, Webpack)
+                </li>
+                <li class="accordion__content_item text">
+                  Управление зависимостями и модулями
+                </li>
+                <li class="accordion__content_item text">
+                  Развертывание проекта на сервере
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion">
+            <div class="accordion__title">
+              <img src="icons/Arrow.svg" alt="arrow" class="accordion__arrow" />
+              <h4 class="title-4">8. Личные проекты и практика</h4>
+            </div>
+            <div class="accordion__content">
+              <ul class="accordion__content_list">
+                <li class="accordion__content_item text">
+                  Разработка собственных веб-приложений и сайтов
+                </li>
+                <li class="accordion__content_item text">
+                  Участие в командных проектах и коллаборативная разработка
+                </li>
+                <li class="accordion__content_item text">
+                  Подготовка портфолио и резюме
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course teachers -->
+    <section class="section-teachers" id="teachers-id">
+      <div class="container">
+        <div class="teachers-title">
+          <h3 class="title-3">учителя курса</h3>
+          <img class="teachers-title__line" src="icons/line.svg" alt="vector" />
+        </div>
+        <div class="teachers-cards">
+          <div class="teachers-cards__item">
+            <img
+              class="teachers-cards__item_img"
+              src="img/Maria.png"
+              alt="Maria"
+            />
+            <h4 class="title-4 teachers-cards__item_title">Мария Иванова</h4>
+            <p class="text teachers-cards__item_text">
+              Full Stack Developer с 10-летним стажем
+            </p>
+            <p class="text">
+              "Откройте для себя мир современных фреймворков и инструментов
+              веб-разработки под руководством опытного практикующего
+              специалиста. Применяемые на практике знания и профессиональные
+              советы помогут вам стать успешным Frontend Developer'ом. Добро
+              пожаловать в мою команду!"
+            </p>
+          </div>
+          <div class="teachers-cards__item">
+            <img
+              class="teachers-cards__item_img"
+              src="img/Yaroslav.png"
+              alt="Yaroslav"
+            />
+            <h4 class="title-4 teachers-cards__item_title">Ярослав Гужва</h4>
+            <p class="text teachers-cards__item_text">
+              Full Stack Developer с 10-летним стажем
+            </p>
+            <p class="text">
+              "Опытный наставник в мире веб-разработки, готовый поделиться
+              своими знаниями и помочь вам освоить технологии Frontend.
+              Разберемся вместе с HTML, CSS и JavaScript! Присоединяйтесь к
+              нашему курсу и обретите уверенность в программировании."
+            </p>
+          </div>
+          <div class="teachers-cards__item">
+            <img
+              class="teachers-cards__item_img"
+              src="img/Sergey.png"
+              alt="Sergey"
+            />
+            <h4 class="title-4 teachers-cards__item_title">Сергей Суслов</h4>
+            <p class="text teachers-cards__item_text">
+              Full Stack Developer с 10-летним стажем
+            </p>
+            <p class="text">
+              "Готовы стать частью фантастического мира веб-разработки?
+              Встречайте опытного преподавателя и практикующего специалиста,
+              который поможет вам освоить фундаментальные навыки Frontend.
+              Приготовьтесь к увлекательному путешествию в современные
+              технологии и лучшие практики разработки веб-приложений!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section feedback -->
+    <section class="section-feedback" id="feedback-id">
+      <div class="container">
+        <h3 class="title-3 text-align-end">Отзывы наших учеников</h3>
+        <span class="circle"></span>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="slide-wrap">
+                <div class="slide-wrap__img">
+                  <img
+                    class="slide-wrap__img_item"
+                    src="img/Vladislav.png"
+                    alt="Vladislav"
+                  />
+                  <div class="slide-wrap__img_quote">
+                    <img
+                      class="slide-wrap__img_quote-circle"
+                      src="icons/quote.png"
+                      alt="quote"
+                    />
+                  </div>
+                </div>
+                <div class="slide-wrap__text">
+                  <p class="text">
+                    Курс Frontend Developer был очень полезным и информативным.
+                    Я получил фундаментальные знания о HTML, CSS и JavaScript, а
+                    также научился использовать различные фреймворки и
+                    инструменты разработки. Преподаватели были опытными и
+                    предлагали интересные практические задания, что помогло мне
+                    применить полученные знания на практике.
+                  </p>
+                  <p class="name text-align-end">Владислав</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-wrap">
+                <div class="slide-wrap__img">
+                  <img
+                    class="slide-wrap__img_item"
+                    src="img/Alexey.png"
+                    alt="Alexey"
+                  />
+                  <div class="slide-wrap__img_quote">
+                    <img
+                      class="slide-wrap__img_quote-circle"
+                      src="icons/quote.png"
+                      alt="quote"
+                    />
+                  </div>
+                </div>
+                <div class="slide-wrap__text">
+                  <p class="text">
+                    Я рекомендую курс Frontend Developer всем, кто хочет стать
+                    профессионалом в веб-разработке. Программа обучения была
+                    хорошо структурирована, и я смог/смогла освоить основы HTML,
+                    CSS и JavaScript за короткое время. Курсы позволили мне
+                    создать собственные проекты и портфолио, что помогло мне
+                    получить работу в сфере веб-разработки.
+                  </p>
+                  <p class="name text-align-end">Алексей</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-wrap">
+                <div class="slide-wrap__img">
+                  <img
+                    class="slide-wrap__img_item"
+                    src="img/Yevheniya.png"
+                    alt="Yevheniya"
+                  />
+                  <div class="slide-wrap__img_quote">
+                    <img
+                      class="slide-wrap__img_quote-circle"
+                      src="icons/quote.png"
+                      alt="quote"
+                    />
+                  </div>
+                </div>
+                <div class="slide-wrap__text">
+                  <p class="text">
+                    Этот курс по Frontend Development был отличным началом для
+                    меня. Я начинала с нулевых знаний, но благодаря ясным
+                    объяснениям и практическим упражнениям я смогла освоить не
+                    только основы программирования, но и создать собственные
+                    веб-приложения. Преподаватели были терпеливы и всегда готовы
+                    помочь.
+                  </p>
+                  <p class="name text-align-end">Евгения</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide">
+                <div class="slide-wrap">
+                  <div class="slide-wrap__img">
+                    <img
+                      class="slide-wrap__img_item"
+                      src="img/Victor.png"
+                      alt="Victor"
+                    />
+                    <div class="slide-wrap__img_quote">
+                      <img
+                        class="slide-wrap__img_quote-circle"
+                        src="icons/quote.png"
+                        alt="quote"
+                      />
+                    </div>
+                  </div>
+                  <div class="slide-wrap__text">
+                    <p class="text">
+                      Я прослушал курс Frontend Developer и остался очень
+                      доволен результатами. Курс предоставил мне все необходимые
+                      навыки и инструменты для разработки современных и
+                      отзывчивых веб-сайтов. Я получил практический опыт работы
+                      с различными фреймворками и научился управлять состоянием
+                      приложений.
+                    </p>
+                    <p class="name text-align-end">Виктор</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-slider">
+            <div class="swiper-counter">
+              <div class="swiper-button-prev"></div>
+              <span class="current-slide">1</span>
+              <span>/</span>
+              <span class="total-slides">4</span>
+            </div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Book the first lesson -->
+    <section class="section-book">
+      <div class="container">
+        <div class="book-title">
+          <h3 class="title-3 text-align-center">записаться на первый урок</h3>
+          <img src="icons/vector.svg" alt="vector" class="book-title__vector" />
+        </div>
+        <div class="book-content">
+          <div class="book-content__form">
+            <p class="text margin-bottom-32px">Первый урок бесплатно!</p>
+            <form action="#" class="form form-validation">
+              <div class="form__input">
+                <label class="form__input_label" for="name">Имя*</label>
+                <input
+                  class="form__input_item input-name"
+                  type="text"
+                  name="name"
+                  placeholder="Введите своё имя"
+                  required
+                />
+              </div>
+              <div class="form__input">
+                <label class="form__input_label" for="tel"
+                  >Номер телефона*</label
+                >
+                <input
+                  class="form__input_item input-tel"
+                  type="tel"
+                  name="tel"
+                  placeholder="Введите Ваш номер телефона"
+                  required
+                />
+              </div>
+              <div class="form__input">
+                <label class="form__input_label" for="email">Email*</label>
+                <input
+                  class="form__input_item input-email"
+                  type="email"
+                  name="email"
+                  placeholder="Введите Ваш Email"
+                  required
+                />
+              </div>
+              <div class="form__input">
+                <input
+                  class="form__input_btn"
+                  type="submit"
+                  value="Оставить заявку"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="book-content__img">
+            <img
+              class="book-content__img_item"
+              src="img/book-img.jpg"
+              alt="computer"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__content_descr">
+            <img class="footer-logo" src="img/footer-logo.png" alt="hardcode" />
+            <p class="text__footer footer__content_descr-text margin-top-16px">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              auctor augue massa, ut ultricies tortor accumsan nec. Praesent in
+              facilisis turpis.
+            </p>
+          </div>
+          <div class="footer__content_social-media">
+            <p class="text">Социальные сети</p>
+            <div class="social-media-icons margin-top-16px">
+              <a class="social-media-icons__link" href="#">
+                <img
+                  class="social-media-icons__item"
+                  src="icons/instagram.svg"
+                  alt="instagram"
+                />
+              </a>
+              <a class="social-media-icons__link" href="#">
+                <img
+                  class="social-media-icons__item"
+                  src="icons/twitter.svg"
+                  alt="twitter"
+                />
+              </a>
+              <a class="social-media-icons__link" href="#">
+                <img
+                  class="social-media-icons__item"
+                  src="icons/facebook.svg"
+                  alt="facebook"
+                />
+              </a>
+              <a class="social-media-icons__link" href="#">
+                <img
+                  class="social-media-icons__item"
+                  src="icons/linkedin-in.svg"
+                  alt="linkedin-in"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="footer__content_contacts">
+            <p class="text">Контакты</p>
+            <a href="tel:+380631457898" class="text__footer"
+              >+38 063 145 78 98</a
+            >
+            <a href="mailto:info@hardcode.com" class="text__footer"
+              >info@hardcode.com</a
+            >
+          </div>
+        </div>
+        <div class="footer__policy">
+          <a class="text__footer" href="#">Политика конфиденциальности</a>
+          <p class="text__footer">Hardcode™ ​© 2023</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/accordion.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
+    <script src="js/ticker.js"></script>
+    <script src="js/hamburger.js"></script>
+  </body>
+</html>

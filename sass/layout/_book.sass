@@ -1,0 +1,42 @@
+.section-book
+    background-color: $color-beige-light
+    padding: 6.4rem 0
+.book-title
+    position: relative
+    margin-bottom: 5rem
+    &__vector
+        position: absolute
+        right: 18.5rem
+        top: 4rem
+        @include respond(laptop-small)
+            right: 10rem
+        @include respond(tablet-large)
+            display: none
+
+.book-content
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    @include respond(tablet-medium)
+        grid-template-rows: repeat(2, min-content)
+        grid-template-columns: none
+        grid-row-gap: 5rem
+    &__form > p
+        @include respond(tablet-medium)
+            text-align: center
+        
+    &__img 
+        @include respond(tablet-medium)
+            display: grid
+            justify-items: center
+        @include respond(phone-large)
+            width: 85%   
+            margin: 0 auto   
+        &_item
+            display: block
+            width: 53.7rem
+            border-radius: 3.2rem  
+            @include respond(phone-large)
+                width: 100%        
+        
+        
+            

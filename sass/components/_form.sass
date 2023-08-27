@@ -1,0 +1,124 @@
+.modal-form
+    display: flex
+    flex-direction: column
+    gap: 2.4rem
+    width: 48rem
+    margin: 0 auto
+    @include respond(phone-large)
+        width: 38rem
+    &__input
+        &_label
+            display: block
+            margin-bottom: .8rem
+            color: $color-black
+            font-family: Montserrat
+            font-size: 1.4rem
+            font-weight: 500
+            line-height: 2rem
+        &_item
+            display: block
+            padding: 1.4rem 0 1.4rem 1.6rem
+            width: 100%
+            border-radius: 1rem
+            background-color: $color-white
+            border: $color-white
+            &::placeholder
+                color: $color-form-placeholder
+                font-family: Montserrat
+                font-size: 1.6rem
+                font-style: normal
+                font-weight: 500
+                line-height: 125%
+                opacity: 0.7
+            &:focus, &:valid, &:invalid
+                outline: none
+                font-family: Montserrat
+                font-size: 1.6rem
+                font-style: normal
+                font-weight: 500
+                line-height: 125%
+        &_btn
+            display: block
+            width: 100%
+            border-radius: 3.2rem
+            background-color: $color-orange
+            border: $color-orange
+            padding: 1.2rem 0 1.2rem 0
+            color: $color-white
+            font-family: Montserrat
+            font-size: 1.6rem
+            font-weight: 600
+            line-height: 150%
+            &:hover
+                background-color: $color-yellow
+
+.form
+    display: flex
+    flex-direction: column
+    gap: 2.4rem
+    &__input
+        @include respond(tablet-medium)
+            width: 70%
+            margin: 0 auto
+        @include respond(phone-large)
+            width: 85%
+        &_label
+            display: block
+            margin-bottom: .8rem
+            color: $color-black
+            font-family: Montserrat
+            font-size: 1.4rem
+            font-weight: 500
+            line-height: 2rem
+        &_item
+            display: block
+            padding: 1.4rem 0 1.4rem 1.6rem
+            width: 70%
+            border-radius: 1rem
+            background-color: $color-white
+            border: $color-white
+            @include respond(laptop-small)
+                width: 85%
+            @include respond(tablet-medium)
+                width: 100%
+            &::placeholder
+                color: $color-form-placeholder
+                font-family: Montserrat
+                font-size: 1.6rem
+                font-style: normal
+                font-weight: 500
+                line-height: 125%
+                opacity: 0.699999988079071
+            &:focus, &:valid, &:invalid
+                outline: none
+                font-family: Montserrat
+                font-size: 1.6rem
+                font-style: normal
+                font-weight: 500
+                line-height: 125%
+        &_btn
+            display: block
+            width: 70%
+            border-radius: 3.2rem
+            background-color: $color-orange
+            border: $color-orange
+            padding: 1.2rem 0 1.2rem 0
+            color: $color-white
+            font-family: Montserrat
+            font-size: 1.6rem
+            font-weight: 600
+            line-height: 150%
+            &:hover
+                background-color: $color-yellow
+            @include respond(laptop-small)
+                width: 85%
+            @include respond(tablet-medium)
+                margin: 0 auto
+.just-validate-error-label
+    color: $color-form-invalid !important
+    font-family: Montserrat
+    font-size: 1.6rem
+    font-style: normal
+    font-weight: 500
+    line-height: 125%
+    display: block

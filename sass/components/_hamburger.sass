@@ -1,0 +1,136 @@
+.hamburger
+    position: fixed
+    top: 0
+    width: 100vw
+    height: 100vh
+    background-color: $color-white
+    opacity: 0
+    z-index: -1
+    transition: all .3s linear
+
+    &__menu
+        position: fixed
+        top: 50%
+        right: 50%
+        transform: translate(50%, -50%)
+
+        &_list
+            display: flex
+            flex-direction: column
+            text-align: center
+            gap: 5rem
+            list-style: none
+            height: 100vh
+            overflow-y: scroll
+            padding-top: 15rem
+        &_list::-webkit-scrollbar
+            display: none
+        &_list::-webkit-scrollbar-thumb
+            display: none
+        &_link
+            text-decoration: none
+            color: $color-black
+            font-family: Montserrat
+            font-size: 4.8rem
+            font-weight: 600
+        &_item
+            filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.6))
+            &:active
+                transition: all .1s ease
+                transform: translateY(.4rem)
+                filter: none
+
+    &__tel
+        &_border
+            text-decoration: none
+            border: 1px solid $color-black
+            border-radius: 1.8rem
+            padding: 1.5rem 2rem
+            display: flex
+            gap: 1rem
+            align-items: center
+            box-shadow: (0px 6px 6px rgba(0, 0, 0, 0.4))
+            &:active
+                transform: translateY(.5rem)
+                box-shadow: none
+        &_icon
+            width: 4.8rem
+            height: 4.8rem
+        &_text
+            color: $color-black
+            font-family: Montserrat
+            font-size: 3.2rem
+            font-weight: 600
+            text-decoration: none
+
+    &__lang
+        border: none
+        color: $color-black
+        background-color: transparent
+        font-family: Montserrat
+        font-size: 3.2rem
+        font-weight: 600
+        width: 10rem
+        margin: 0 auto
+        filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.6))
+        &:active
+            transform: translateY(.5rem)
+            box-shadow: none
+
+.hamburger-box
+    display: none
+    @include respond(tablet-medium)
+        position: fixed
+        top: 0
+        z-index: 28
+        width: 100%
+        background-color: $color-white
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 2rem 5.5rem
+
+
+
+.hamburger-btn
+    display: block
+    width: 30px
+    height: 30px
+    cursor: pointer
+    position: relative
+    & > span
+        position: absolute
+        top: 0
+        width: 100%
+        height: 2px
+        background-color: $color-black
+        transition: .3s all
+    & > span:nth-of-type(2)
+        position: absolute
+        top: 8px
+        width: 30px
+        height: 2px
+        background-color: $color-black
+        transition: .3s all
+    & > span:nth-of-type(3)
+        position: absolute
+        top: 16px
+        width: 30px
+        height: 2px
+        background-color: $color-black
+        transition: .3s all
+
+.hamburger-btn.active span:nth-of-type(1)
+    transform: rotate(-45deg)
+    top: 1.5rem
+
+.hamburger-btn.active span:nth-of-type(2)
+    display: none
+
+.hamburger-btn.active span:nth-of-type(3)
+    transform: rotate(45deg)
+    top: 1.5rem
+
+.hamburger.active
+    opacity: 1
+    z-index: 25

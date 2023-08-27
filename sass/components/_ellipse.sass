@@ -1,0 +1,27 @@
+.ellipse
+    display: block
+    width: 32rem
+    height: 32rem
+    border: 1px solid $color-yellow
+    border-radius: 50%
+    background-color: $color-yellow
+    filter: blur(30rem)
+    @include respond(tablet-large)
+        width: 22rem
+        height: 22rem
+    &__right
+        position: absolute
+        top: 0
+        right: 0
+    &__left
+        position: absolute
+        bottom: 0
+        left: 0
+    &__course
+        position: absolute
+        top:75rem
+        right: 0
+        @include respond(laptop-small)
+            top: 100rem
+        @include respond(tablet-large)
+            top: 140rem

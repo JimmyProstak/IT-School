@@ -1,0 +1,79 @@
+.section-course
+    padding: 12rem 0 13rem 0
+    position: relative
+    @include respond(tablet-medium)
+        padding: 6rem 0
+
+.course
+    display: grid
+    grid-template-columns: repeat(2, 50%)
+    padding-bottom: 15rem
+    @include respond(tablet-large)
+        grid-template-rows: repeat(2, min-content)
+    @include respond(tablet-medium)
+        padding-bottom: 6rem
+    &__img
+        transform: translateX(-5.5rem)
+        position: relative
+        @include respond(tablet-large)
+            grid-column: 1 / -1
+            grid-row: 2 / 3
+            text-align: center
+            transform: translateX(0)
+        &_item
+            width: 70rem
+            position: relative
+            z-index: 3
+            @include respond(phone-large)
+                width: 90%
+        &_dotted
+            position: absolute
+            bottom: 4.5rem
+            left: 2.2rem
+            @include respond(laptop-medium)
+                bottom: 9rem
+            @include respond(laptop-small)
+                bottom: 15rem
+            @include respond(tablet-large)
+                display: none
+
+    &__content
+        position: relative
+        z-index: 2
+        @include respond(tablet-large)
+            grid-row: 1 / 2
+            grid-column: 1 / -1
+            width: 100%
+
+        &_title
+            position: relative
+            @include respond(laptop-small)
+                text-align: center
+            & > h3
+                @include respond(phone-large)
+                    width: 90%
+                    margin: 0 auto
+
+        &_title-vector
+            position: absolute
+            top: -2.5rem
+            right: -4.5rem
+            width: 4.8rem
+            height: 4.8rem
+            @include respond(tablet-large)
+                display: none
+    &__descr
+        max-width: 55rem
+        @include respond(tablet-large)
+            max-width: 110rem
+            
+        &_title
+            display: flex
+            gap: 1rem
+            align-items: center
+            margin-bottom: 2.4rem
+    &__descr:not(:last-child)
+        margin-bottom: 3.2rem
+    &__program
+        position: relative
+        z-index: 2
